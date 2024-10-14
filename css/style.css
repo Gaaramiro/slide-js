@@ -14,6 +14,7 @@ ul{
 }
 .slide{
   display: flex;
+  
 }
 .slide li{
   flex-shrink: 0;
