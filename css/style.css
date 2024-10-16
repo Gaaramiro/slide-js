@@ -1,30 +1,40 @@
-body{
+body {
   margin: 0;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  
 }
-.slide-wrapper{
+.slide-wrapper {
   overflow: hidden;
-
 }
-.slide{
+.slide {
   display: flex;
-  
 }
-.slide li{
+.slide:hover {
+  will-change: transform;
+}
+.slide li {
   flex-shrink: 0;
   width: 80vw;
   max-width: 800px;
   margin: 20px;
-  
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-img{
+
+.slide li.ativo {
+  opacity: 1;
+  transform: scale(1);
+}
+img {
   display: block;
   max-width: 100%;
-
 }
