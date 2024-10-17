@@ -38,3 +38,22 @@ img {
   display: block;
   max-width: 100%;
 }
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fb5;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+[data-control="slide"] li.ativo a,
+[data-control="slide"] li a:hover {
+  background-color: #e54;
+}
